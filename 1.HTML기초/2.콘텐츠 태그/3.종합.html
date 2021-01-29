@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: blod;
+            margin-top: 20px;
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        header nav ul {
+            flex: 1;
+            display: flex;
+        }
+
+        header nav li {
+            list-style: none;
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+        header nav li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 1.1em;
+        }
+
+        header nav li a:hover {
+            color: red;
+            background: yellow;
+        }
+
+        section {
+            border: 1px solid lightgray;
+            margin-top: 40px;
+            padding: 60px;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: red;
+            border-bottom: 1px dashed red;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto 30px;
+        }
+
+        section article {
+            height: 300px;
+            border: 2px solid blue;
+            padding: 30px;
+            text-align: center;
+            width: 25%;
+            margin-right: 25%;
+            float: left;
+        }
+
+        aside {
+            width: 150px;
+            height: 800px;
+            background: green;
+            position: absolute;
+            right: 5%;
+            left: 10%;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            margin-top: 60px;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: gray;
+            margin-right: 30px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>로고</h1>
+        <nav>
+            <ul>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">방명록</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="board">
+        <h2>게시물 목록</h2>
+        <article>
+            <h3>게시물 제목1</h3>
+            <p>내용</p>
+        </article>
+        <article>
+            <h3>게시물 제목2</h3>
+            <p>내용</p>
+        </article>
+        <article>
+            <h3>게시물 제목3</h3>
+            <p>내용</p>
+        </article>
+    </section>
+    <aside>
+        side banner
+    </aside>
+    <footer>
+        <address>
+            <a href="mailto:www.gmail.com">이메일 전송</a>
+            <a href="tel:+8201012341234">전화 걸기</a>
+        </address>
+    </footer>
+</body>
+
+</html>
