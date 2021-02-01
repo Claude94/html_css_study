@@ -1,0 +1,6 @@
+@import "side.css";
+
+h1, p {
+    color: red;
+    background: orange;
+}
