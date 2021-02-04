@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+            /* overflow: hidden; */
+
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellow;
+            font-size: 50px;
+            float: left;
+        }
+        /* .clear-box {
+            clear:both;
+        } */
+        .clearfix::after {
+            content:'';
+            display: block;
+            clear: both;
+        }
+        span {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            font-size: 40px;
+            /* 인라인 요소에 float를 부여하면 block 자동변환 */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span>hello</span>
+
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <div class="clear-box"></div> -->
+    </div>
+
+</body>
+
+</html>
