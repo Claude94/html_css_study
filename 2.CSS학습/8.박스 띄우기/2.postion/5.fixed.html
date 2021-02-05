@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 8000px;
+        }
+        .grandparant {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed gray;
+            padding: 100px;
+        }
+
+        .parent{
+            width: 400px;
+            height: 300px;
+            border: 4px dashed lightgrey;
+        }
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed gold;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+        .adsolute {
+            position: adsolute;
+            left: 50px;
+            bottom: 10px;
+        
+        }
+        .fixed {
+            position: fixed;
+            bottom: 50px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grandparant">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child fixed">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
